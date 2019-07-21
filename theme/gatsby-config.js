@@ -7,14 +7,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `audio`,
-        path: `${__dirname}/content/audio/`,
+        path: `./content/audio/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/content/images/`,
+        path: `./content/images/`,
       },
     },
     {
