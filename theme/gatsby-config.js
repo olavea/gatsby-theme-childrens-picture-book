@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Theme Jam Example Submission",
+    title: "gatsby-theme-childrens-picture-book",
   },
   plugins: [
     {
