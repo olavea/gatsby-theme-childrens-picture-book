@@ -1,6 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: "gatsby-theme-childrens-picture-book",
+    description:
+      "Make a Do-It-Yourself childrens picture book together with a child you know.",
+    author: "@olavea",
   },
   plugins: [
     {
