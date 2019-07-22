@@ -14,7 +14,7 @@ exports.createPages = ({ graphql, actions }) => {
     `).then(results => {
       results.data.allFile.edges.forEach(({ node }) => {
         let namePath = ""
-        if (node.name === "coverPage") {
+        if (node.name === "1") {
           namePath = `/`
         } else {
           namePath = `/${node.name}`
