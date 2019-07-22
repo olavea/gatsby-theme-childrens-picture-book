@@ -11,6 +11,7 @@ export default class postLayout extends Component {
     return (
       <>
         <SEO />
+        <title titleProp={file.name} />
         <PageFlipper
           pageNumberProp={file.name}
           tagline="Wes (& Scott) Are Cool"
