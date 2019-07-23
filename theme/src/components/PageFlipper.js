@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 
 class PageFlipper extends React.Component {
   render() {
-
     const {
       nextPage,
       previousPage
