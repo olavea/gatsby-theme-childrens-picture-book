@@ -6,7 +6,7 @@ const audioWrapper = ({ children }) => (
   <StaticQuery
     query={graphql`
       query audioWrapperQuery {
-        file(relativePath: { eq: "Petra_Kanini.mp3" }) {
+        file(sourceInstanceName: { eq: "audio" }) {
           publicURL
         }
       }

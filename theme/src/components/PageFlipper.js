@@ -4,11 +4,11 @@ import { Link } from "gatsby"
 
 class PageFlipper extends React.Component {
   render() {
-    const currentPage = this.props.pageNumberProp
-    var pageNumber = Number(currentPage)
 
-    const prevPage = currentPage - 2 === 0 ? "/" : (currentPage - 2).toString()
-    const nextPage = (pageNumber + 1).toString()
+    const {
+      nextPage,
+      previousPage
+    } = this.props
 
     return (
       <ul
@@ -24,9 +24,9 @@ class PageFlipper extends React.Component {
         }}
       >
         <li>
-          {prevPage && (
-            <Link to={`/${prevPage}`} rel="prev">
-              ← {prevPage}
+          {previousPage && (
+            <Link to={`/${previousPage}`} rel="prev">
+              ← {previousPage}
             </Link>
           )}
         </li>
