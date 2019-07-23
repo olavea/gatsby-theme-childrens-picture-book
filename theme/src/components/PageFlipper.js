@@ -7,7 +7,7 @@ class PageFlipper extends React.Component {
     const currentPage = this.props.pageNumberProp
     var pageNumber = Number(currentPage)
 
-    const prevPage = currentPage - 1 === 0 ? "/" : (currentPage - 1).toString()
+    const prevPage = currentPage - 2 === 0 ? "/" : (currentPage - 2).toString()
     const nextPage = (pageNumber + 1).toString()
 
     return (
