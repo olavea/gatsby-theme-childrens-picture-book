@@ -19,6 +19,10 @@ class PageFlipper extends React.Component {
     window.addEventListener("keydown", this.handleKeyStroke)
   }
 
+  componentWillUnmount() {
+    window.removeEventListener("keydown", this.handleKeyStroke)
+  }
+
   render() {
     const { nextPage, previousPage } = this.props
 
