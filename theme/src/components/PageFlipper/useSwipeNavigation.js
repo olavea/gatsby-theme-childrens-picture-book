@@ -22,9 +22,9 @@ export default ({previousPage, nextPage}, navigate) => {
 
   const onTouchEnd = () => {
     if (isSwiping && swipePosition) {
-      if (swipePosition.deltaX < 0) {
+      if (swipePosition.deltaX < 0 && nextPage) {
         navigate(nextPage)
-      } else if (swipePosition.deltaX > 0) {
+      } else if (swipePosition.deltaX > 0 && previousPage) {
         navigate(previousPage)
       }
     }
