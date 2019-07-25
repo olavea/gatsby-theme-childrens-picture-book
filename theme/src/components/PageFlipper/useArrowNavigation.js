@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect } from 'react'
 
 export default ({ nextPage, previousPage }, onNavigate) => {
   const handleKeyStroke = e => {

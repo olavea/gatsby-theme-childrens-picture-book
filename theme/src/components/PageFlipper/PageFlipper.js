@@ -1,9 +1,11 @@
 import React from "react"
 import { Link, navigate } from "gatsby"
 import useArrowNavigation from './useArrowNavigation';
+import useSwipeNavigation from './useSwipeNavigation';
 
 const PageFlipper = ({ nextPage, previousPage }) => {
   useArrowNavigation({ nextPage, previousPage }, navigate);
+  useSwipeNavigation({ nextPage, previousPage}, navigate);
 
   return (
     <ul
