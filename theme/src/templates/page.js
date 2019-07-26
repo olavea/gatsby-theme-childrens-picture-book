@@ -1,22 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
-import PageFlipper from "../components/PageFlipper"
-import SEO from "../components/seo"
+import Page from "../components/page"
 
 const PageTemplate = ({ data: { file }, pageContext }) => {
-  return (
-    <>
-      <SEO title={pageContext.title} />
-
-      <PageFlipper
-        nextPage={pageContext.nextPage}
-        previousPage={pageContext.previousPage}
-      />
-
-      <Img fluid={file.childImageSharp.fluid} />
-    </>
-  )
+  return <Page {...pageContext} imageFile={file} />
 }
 
 export const query = graphql`
