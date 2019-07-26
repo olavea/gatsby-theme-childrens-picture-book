@@ -2,7 +2,7 @@ const page = (node, index) => {
   if (!node) return
 
   return {
-    title: index.toString(10),
+    title: index === 0 ? "" : index.toString(10),
     path: index === 0 ? "/" : `/${node.name}`,
   }
 }
