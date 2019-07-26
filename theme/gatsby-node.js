@@ -3,7 +3,7 @@ const page = (node, index) => {
 
   return {
     title: index === 0 ? "" : index.toString(10),
-    path: index === 0 ? "/" : `/${node.name}`,
+    path: index === 0 ? "" : `${node.name}`,
   }
 }
 
@@ -36,7 +36,7 @@ exports.createPages = ({ graphql, actions }) => {
         const previousPage = page(previous, index - 1)
 
         createPage({
-          path: currentPage.path,
+          path: currentPage.path || "/",
           component: require.resolve("./src/templates/page.js"),
           context: {
             nextPage,
