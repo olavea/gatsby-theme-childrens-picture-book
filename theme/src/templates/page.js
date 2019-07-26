@@ -7,8 +7,8 @@ const PageTemplate = ({ data: { file }, pageContext }) => {
 }
 
 export const query = graphql`
-  query PageQuery($slug: String!) {
-    file(name: { eq: $slug }) {
+  query PageQuery($imageFileName: String!) {
+    file(name: { eq: $imageFileName }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
