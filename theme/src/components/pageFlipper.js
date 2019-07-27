@@ -3,15 +3,16 @@ import React, { useEffect } from "react"
 import { Link, navigate } from "gatsby"
 
 const PageFlipper = ({ nextPage, previousPage }) => {
+  const tingeling = event => {
+    if (event.keyCode === 37 && previousPage) {
+      navigate(previousPage.path)
+    } else if (event.keyCode === 39 && nextPage) {
+      navigate(nextPage.path)
+    }
+  }
   useEffect(() => {
     // Update the document title using the browser API
-    window.addEventListener("keydown", event => {
-      if (event.keyCode === 37 && previousPage) {
-        navigate(previousPage.path)
-      } else if (event.keyCode === 39 && nextPage) {
-        navigate(nextPage.path)
-      }
-    })
+    window.addEventListener("keydown", tingeling)
   })
 
   return (
