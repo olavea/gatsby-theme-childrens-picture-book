@@ -7,7 +7,6 @@ export default ({previousPage, nextPage}, navigate) => {
 
   const onTouchMove = (event) => {
     if (!touchStart) return
-    event.preventDefault()
     const { pageX: x, pageY: y } = event.touches[0]
     const deltaX = x - touchStart.x
     const deltaY = y - touchStart.y
