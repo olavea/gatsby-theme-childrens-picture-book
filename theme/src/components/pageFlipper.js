@@ -13,6 +13,10 @@ const PageFlipper = ({ nextPage, previousPage }) => {
   useEffect(() => {
     // Update the document title using the browser API
     window.addEventListener("keydown", tingeling)
+
+    return () => {
+      window.removeEventListener("keydown", tingeling)
+    }
   })
 
   return (
