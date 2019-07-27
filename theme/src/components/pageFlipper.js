@@ -5,8 +5,12 @@ import { Link, navigate } from "gatsby"
 const PageFlipper = ({ nextPage, previousPage }) => {
   useEffect(() => {
     // Update the document title using the browser API
-    window.addEventListener("keydown", () => {
-      console.log("key is down")
+    window.addEventListener("keydown", event => {
+      if (event.keyCode === 37) {
+        console.log("left arrow ")
+      } else if (event.keyCode === 39) {
+        console.log("right arrow")
+      }
     })
   })
 
