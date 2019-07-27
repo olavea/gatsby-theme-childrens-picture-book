@@ -17,5 +17,5 @@ export default ({ nextPage, previousPage }, onNavigate) => {
     return () => {
       window.removeEventListener("keydown", handleKeyStroke)
     }
-  })
+  }, [])
 }
