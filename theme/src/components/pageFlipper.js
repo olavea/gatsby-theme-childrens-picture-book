@@ -6,10 +6,10 @@ const PageFlipper = ({ nextPage, previousPage }) => {
   useEffect(() => {
     // Update the document title using the browser API
     window.addEventListener("keydown", event => {
-      if (event.keyCode === 37) {
-        console.log("left arrow ")
-      } else if (event.keyCode === 39) {
-        console.log("right arrow")
+      if (event.keyCode === 37 && previousPage) {
+        navigate(previousPage.path)
+      } else if (event.keyCode === 39 && nextPage) {
+        navigate(nextPage.path)
       }
     })
   })
