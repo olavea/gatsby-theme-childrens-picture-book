@@ -1,8 +1,15 @@
-import React from "react"
+import React, { useEffect } from "react"
 
 import { Link, navigate } from "gatsby"
 
 const PageFlipper = ({ nextPage, previousPage }) => {
+  useEffect(() => {
+    // Update the document title using the browser API
+    window.addEventListener("keydown", () => {
+      console.log("key is down")
+    })
+  })
+
   return (
     <ul
       style={{
