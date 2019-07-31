@@ -1,8 +1,4 @@
-module.exports = ({
-  imagePath = "book/images",
-  audioPath = "book/audio",
-  basePath = "/",
-}) => {
+module.exports = ({ imagePath = "book/pictures", audioPath }) => {
   return {
     siteMetadata: {
       title: "gatsby-theme-children's-picture-book",
@@ -14,26 +10,32 @@ module.exports = ({
       {
         resolve: `gatsby-source-filesystem`,
         options: {
-          name: `audio`,
-          path: audioPath,
-        },
-      },
-      {
-        resolve: `gatsby-source-filesystem`,
-        options: {
           name: `images`,
           path: imagePath,
         },
       },
-      {
-        resolve: `gatsby-plugin-layout`,
-        options: {
-          component: require.resolve(`./src/components/persistentLayout.js`),
+    ]
+      .concat(
+        audioPath
+          ? {
+              resolve: `gatsby-source-filesystem`,
+              options: {
+                name: `audio`,
+                path: audioPath,
+              },
+            }
+          : []
+      )
+      .concat([
+        {
+          resolve: `gatsby-plugin-layout`,
+          options: {
+            component: require.resolve(`./src/components/persistentLayout.js`),
+          },
         },
-      },
-      "gatsby-plugin-theme-ui",
-      "gatsby-plugin-sharp",
-      "gatsby-transformer-sharp",
-    ],
+        "gatsby-plugin-theme-ui",
+        "gatsby-plugin-sharp",
+        "gatsby-transformer-sharp",
+      ]),
   }
 }
