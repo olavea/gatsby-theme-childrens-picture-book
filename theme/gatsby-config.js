@@ -1,4 +1,8 @@
-module.exports = ({ imagePath = "content/images", basePath = "/" }) => {
+module.exports = ({
+  imagePath = "book/images",
+  audioPath = "book/audio",
+  basePath = "/",
+}) => {
   return {
     siteMetadata: {
       title: "gatsby-theme-children's-picture-book",
@@ -11,7 +15,7 @@ module.exports = ({ imagePath = "content/images", basePath = "/" }) => {
         resolve: `gatsby-source-filesystem`,
         options: {
           name: `audio`,
-          path: `./content/audio/`,
+          path: audioPath,
         },
       },
       {
