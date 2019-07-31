@@ -11,6 +11,10 @@ module.exports = {
       options: {
         imagePath: `./book/pics/`,
         audioPath: `./book/audio/`,
+        infoLink: {
+          title: "GitHub",
+          url: `https://github.com/olavea/gatsby-theme-picture-book`,
+        },
       },
     },
   ],

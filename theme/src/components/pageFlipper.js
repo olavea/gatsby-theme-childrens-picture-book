@@ -2,23 +2,36 @@ import React from "react"
 
 import Button from "./ui/button"
 
-const PageFlipper = ({ previousPage, nextPage }) => {
-  const prevNavItem = previousPage && {
-    label: "←",
-    url: previousPage.path,
-    rel: "prev",
-  }
+const PageFlipper = ({ previousPage, nextPage, infoLink }) => {
+  const infoNavItem = infoLink &&
+    infoLink.url && {
+      label: infoLink.label || "i",
+      title: infoLink.title || "info",
+      url: infoLink.url,
+    }
 
-  const nextNavItem = nextPage && {
-    label: "→",
-    url: nextPage.path,
-    rel: "next",
-  }
+  const prevNavItem = previousPage
+    ? {
+        label: "←",
+        title: previousPage.title,
+        url: previousPage.path,
+        rel: "prev",
+      }
+    : infoNavItem
+
+  const nextNavItem = nextPage
+    ? {
+        label: "→",
+        title: nextPage.title,
+        url: nextPage.path,
+        rel: "next",
+      }
+    : infoNavItem
 
   return (
     <>
-      {prevNavItem && <Button {...prevNavItem} />}
-      {nextNavItem && <Button {...nextNavItem} />}
+      {prevNavItem && <Button {...prevNavItem} position={"left"} />}
+      {nextNavItem && <Button {...nextNavItem} position={"right"} />}
     </>
   )
 }
