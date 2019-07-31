@@ -1,3 +1,3 @@
-import PageFlipper from './PageFlipper';
+import PageFlipper from "./pageFlipper"
 
-export default PageFlipper;
+export default PageFlipper

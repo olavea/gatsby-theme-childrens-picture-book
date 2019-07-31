@@ -1,12 +1,11 @@
 import React from "react"
 import { Link, navigate } from "gatsby"
-import useArrowNavigation from './useArrowNavigation';
-import useSwipeNavigation from './useSwipeNavigation';
+import useArrowNavigation from "./useArrowNavigation"
+import useSwipeNavigation from "./useSwipeNavigation"
 
 const PageFlipper = ({ nextPage, previousPage }) => {
-  useArrowNavigation({ nextPage, previousPage }, navigate);
-  useSwipeNavigation({ nextPage, previousPage}, navigate);
-
+  useArrowNavigation({ nextPage, previousPage }, navigate)
+  useSwipeNavigation({ nextPage, previousPage }, navigate)
   return (
     <ul
       style={{
@@ -22,15 +21,15 @@ const PageFlipper = ({ nextPage, previousPage }) => {
     >
       <li>
         {previousPage && (
-          <Link to={`${previousPage}`} rel="prev">
-            ← {previousPage}
+          <Link to={`${previousPage.path}`} rel="prev">
+            ← {previousPage.path}
           </Link>
         )}
       </li>
       <li>
         {nextPage && (
-          <Link to={`${nextPage}`} rel="next">
-            {nextPage} →
+          <Link to={`${nextPage.path}`} rel="next">
+            {nextPage.title} →
           </Link>
         )}
       </li>
