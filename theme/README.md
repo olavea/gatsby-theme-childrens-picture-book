@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">
-  @olavea/gatsby-theme-book
+  @olavea/gatsby-theme-picture-book
 </h1>
 
 ## A Gatsby theme for building a book.
@@ -31,7 +31,7 @@ npm install @olavea/gatsby-theme-book
 This will generate a new book (with the folder name "book") that pre-configures use of the theme including example content.
 
 ```sh
-gatsby new book LekoArts/gatsby-starter-book
+gatsby new book olavea/gatsby-starter-book
 ```
 
 ## Usage
@@ -41,7 +41,7 @@ gatsby new book LekoArts/gatsby-starter-book
 | Key            | Default Value      | Description                                                                                               |
 | -------------- | ------------------ | --------------------------------------------------------------------------------------------------------- |
 | `basePath`     | `/`                | Root url for the theme                                                                                    |
-| `imagePath` | `book/pics` | Location of picturess                                                                                      |
+| `imagePath` | `book/images` | Location of picturess                                                                                      |
 | `audioPath`    | `book/audio`    | Location of audio (optional)                                                                   |
 
 The usage of `book/pics` is mandatory. Have a look at the [example](https://github.com/LekoArts/gatsby-themes/tree/master/examples/emma) on how to create entries.
