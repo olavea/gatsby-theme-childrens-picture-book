@@ -7,7 +7,7 @@
 module.exports = {
   plugins: [
     {
-      resolve: `gatsby-theme-childrens-picture-book`,
+      resolve: `@olavea/gatsby-theme-picture-book`,
       options: {
         imagePath: `./book/pics/`,
         audioPath: `./book/audio/`,

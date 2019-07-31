@@ -1,9 +1,9 @@
 module.exports = ({ imagePath = "book/pictures", audioPath }) => {
   return {
     siteMetadata: {
-      title: "gatsby-theme-children's-picture-book",
+      title: "@olavea/gatsby-theme-picture-book",
       description:
-        "Make a Do-It-Yourself childrens picture book together with a child you know.",
+        "Make a Do-It-Yourself picture book together with a child you know.",
       author: "@olavea",
     },
     plugins: [

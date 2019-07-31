@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-theme-childrens-picture-book",
+  "name": "@olavea/gatsby-theme-picture-book",
   "author": "Ola <ola@olavea.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/olavea/gatsby-theme-childrens-picture-book.git"
+    "url": "https://github.com/olavea/gatsby-theme-picture-book.git"
   },
-  "version": "1.0.1",
+  "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
   "peerDependencies": {
