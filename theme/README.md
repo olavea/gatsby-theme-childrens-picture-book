@@ -7,19 +7,23 @@
   @olavea/gatsby-theme-picture-book
 </h1>
 
-## A Gatsby theme for building a book.
+> I love reading books. So the day it dawned on me that I could build a book with Gatsby was a GOOD day. By open sourcing this theme I hope to pass some of the goodness on to you.
 
-I love reading books. So the day it dawned on me that I could build a book with Gatsby was a GOOD day. I will try to pass some of the goodness of that day to you with this Gatsby Book Theme.
+> [Lean how my daughter](#storytime) Lillian (4.5 🦄) gave me this book building idea by scrolling to the end.
 
-If you want to read how my daughter Lillian (4) gave me this book building idea see below.
+> Check out [Petra Rabbit](https://petra-rabbit.netlify.com). It's almost Beatrix Potter's Peter Rabbit, narrated by Lillian and I.
 
-[**Demo Website**](https://petra-kanini.netlify.com)
+> -- <cite>Ola Vea (#codenewbie 41)<cite>
 
-## Features
+[DEMO Site](https://petra-rabbit.netlify.com)
 
-## -
+## Create a Do-It-Yourself picture book together with a child you know
 
--
+- Automagically generate a picture book from image files
+- Touch swipe to flip page
+- Optional audio track
+
+Ola will continue working on this theme while learning to code. New feature will be added sporadically. If you are #codenewbie as well you are welcome to join, @raae will help out manage the repo.
 
 ## Installation
 
@@ -29,21 +33,23 @@ npm install @olavea/gatsby-theme-picture-book
 
 ### Install as a starter
 
-This will generate a new book (with the folder name "book") that pre-configures the use of the theme including example content.
+A starter has not yet been created. Hoping for a solution to [this issue](https://github.com/gatsbyjs/gatsby/issues/16135).
 
-```sh
-gatsby new book @olavea/gatsby-starter-picture-book-theme
-```
+But do have a look in `/demo` for a full example.
 
 ## Usage
 
 ### Theme options
 
-| Key         | Default Value | Description                                              |
-| ----------- | ------------- | -------------------------------------------------------- |
-| `basePath`  | `/`           | Root url for the theme                                   |
-| `imagePath` | `book/images` | Path to folder of images to turn into picture book pages |
-| `audioPath` | null          | Path to folder with a single audio file (optional)       |
+| Key              | Default Value | Description                                              |
+| ---------------- | ------------- | -------------------------------------------------------- |
+| `basePath`       | `/`           | Root url for the theme                                   |
+| `imagePath`      | `book/images` | Path to folder of images to turn into picture book pages |
+| `audioPath`      | null          | Path to folder with a single audio file (optional)       |
+| `infoLink`       | null          | Adds an info button to first and last page (optional)    |
+| `infoLink.url`   | null          | Url to navigate to (external or internal)                |
+| `infoLink.label` | `i`           | Label inside button                                      |
+| `infoLink.title` | `info`        | Title for the a tag                                      |
 
 The `imagePath` folder must contain at least _one_ image file. The book's pages will be sorted alphabetically by filename. We suggest using a naming schema similar to this "01.jpg", "02.jpg" ... "99.jpg".
 
@@ -59,6 +65,10 @@ module.exports = {
         basePath: `/my-book`,
         imagePath: `book/pics`,
         audioPath: `book/audio`,
+        infoLink: {
+          title: "Project on GitHub",
+          url: `https://github.com/olavea/gatsby-theme-picture-book.git`,
+        },
       },
     },
   ],
@@ -73,61 +83,52 @@ In addition to the theme options, there are a handful of items you can customize
 // gatsby-config.js
 module.exports = {
   siteMetadata: {
-    // Used as part of the page title template and as title for the first page.
-    siteTitle: `Petra Kanini`,
-    // Will be used to generate absolute URLs for og:image etc.
-    siteUrl: `https://petra-kanini.netlify.com`,
+    // First page will have siteTile as page title,
+    // the other pages follow this configuration <page#> | <siteTitle>.
+    siteTitle: `Petra Rabbit`,
     // Used for SEO
-    siteDescription: `Almost Peter Rabbit. Story and illustrations by Beatrix Potter, audio by Ola Vea (41) and Lillian Raae-Vea (4.5 🦄)`,
+    siteDescription: `Almost Beatrix Potter's Peter Rabbit, narrated by Ola (41) and Lillian (4.5 🦄)`,
     // Will be set on the <html /> tag
     siteLanguage: `en`,
     // Twitter Handle
-    author: `Beatrix Potter (with some small changes by Lillian Raae-Vea (4.5 🦄)`,
+    author: `@OlaHolstVea`,
   },
 }
 ```
 
-### Formats
+### Shadowing
 
-Projects need the following frontmatter:
+To change the look and feel of the theme shadow components found in `components/ui`. These have solely presentational logic, while the root components in `components` contain the more functional logic.
 
-```md
----
-client: "LekoArts"
-title: "Theme"
-cover: "./image.jpg"
-date: "2019-06-10"
-service: "Theme"
-color: "#8e9d31"
----
-```
+This theme has a persistent layout component `components/persistenLayout.js`. You will therefore not find a reference to a layout in any component. The `PersistentLayout` is wrapped around the whole site by [gatsby-plugin-layout](https://www.gatsbyjs.org/packages/gatsby-plugin-layout/).
 
-Pages need the following frontmatter:
+Why do we do this? Its so the state of the audio element will persist through all pages of the book.
 
-```md
----
-title: "Name"
-slug: "/name"
-cover: "./name.jpg"
----
-```
+## [Storytime](#storytime)
 
-Let me tell you about the good day my daughter Lillian (4) gave me the idea to build a book with Gatsby.
+### A Good Day In The Morning
 
-## A Good Day In The Morning
-
-One sunny morning Lillian (4) and I was reading Ginger & Pickles together.
-Lillian (4) is my daughter. Ginger is an orange and yellow striped cat who runs a shop with Pickles the terrier. Lillian (4) was drinking warmed oat milk, I was reading out loud and sipping coffee.
+One sunny morning Lillian and I were reading Beatrix Potter's Ginger & Pickles together.
+Lillian (4.5 🦄) is my daughter. Ginger is an orange and yellow striped cat who runs a shop with Pickles the terrier. Lillian was drinking warmed oat milk, I was reading out loud and sipping coffee.
 
 Lillian said:
 «I want to make my own book.»
-«Yessss!!» I said with feeling. «Let’s build Ginger & Pickles, but with added PIRATES! Arrrh!»
-«Do it NOW!» golden haired Lillian (4) said.
+«Yessss!!» I said with glee. «Let's build Ginger & Pickles, but with added PIRATES! Arrrh!»
+«Do it NOW!» golden-haired Lillian said.
 
-## A Good Day At Work
+### A Good Day At Work
 
-After a reckless ride on her green bicycle I leave Lillian at kindergarten and start my work day by typimg «Beatrix Potter» into google, she is the author of Ginger & Pickles.
+After a reckless ride on her green bicycle, I leave Lillian at kindergarten and start my workday by typing «Beatrix Potter» into google.
 
-## A Treausre Trove
+All of Beatrix Potter's precious picture books for children where THERE. Like a treasure trove. Content free from «this-content-needs-polishing-before-publishing-it» thoughts to distract me.
 
-All of Beatrix Potter’s precious picture books for children where THERE, treausre trovelike. Clean content undirtified by «this-content-needs-polishing» thoughts to disctract me. I got started by firing up Scott Tolinski’s top notch tutorial Pro Gatsby 2. I had our new Ginger & Pickles book deployed before i even rememberd the poor pirates! Arrh!
+I started by firing up Scott Tolinski's top-notch tutorial [Pro Gatsby 2](https://www.leveluptutorials.com/tutorials/pro-gatsby-2).
+Before I knew it, I had the Ginger & Pickles book deployed before i even remembered the poor pirates! Arrh!
+
+### A Good Summer
+
+Do not worry! Pirates were added, kids from the kindergarten contributed and I kept working on a Gatbsy starter to simplify creating books even more.
+
+When the Gasby Theme Jam came around, it was the perfect project for my time at the summer office!
+
+And the rest as they say, is history (or a [tweet thread by Lillian's mom @raae](https://twitter.com/raae/status/1147430949598240769)).

@@ -6,14 +6,15 @@ import useSiteMetadata from "../hooks/useSiteMetadata"
 const SEO = ({ description, lang, meta, keywords, title }) => {
   const siteMeta = useSiteMetadata()
 
-  const pageTitle = title || siteMeta.title
-  const pageTitleTemplate = title && `%s | ${siteMeta.title}`
-  const metaDescription = description || siteMeta.description
+  const pageTitle = title || siteMeta.siteTitle
+  const pageTitleTemplate = title && `%s | ${siteMeta.siteTitle}`
+  const metaDescription = description || siteMeta.siteDescription
+  const pageLanguage = lang || siteMeta.siteLanguage
 
   return (
     <Helmet
       htmlAttributes={{
-        lang,
+        pageLanguage,
       }}
       title={pageTitle}
       titleTemplate={pageTitleTemplate}
@@ -65,14 +66,12 @@ const SEO = ({ description, lang, meta, keywords, title }) => {
 }
 
 SEO.defaultProps = {
-  lang: `en`,
   meta: [],
   keywords: [],
 }
 
 SEO.propTypes = {
   description: PropTypes.string,
-  lang: PropTypes.string,
   meta: PropTypes.array,
   keywords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,

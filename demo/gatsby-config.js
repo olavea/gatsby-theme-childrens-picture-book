@@ -5,6 +5,13 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    siteTitle: `Petra Rabbit`,
+    siteDescription: `Almost Beatrix Potter's Peter Rabbit. Narrated by Ola (41) and Lillian (4.5 🦄)`,
+    siteLanguage: `en`,
+    // Twitter Handle
+    author: `@OlaHolstVea`,
+  },
   plugins: [
     {
       resolve: `@olavea/gatsby-theme-picture-book`,
