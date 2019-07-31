@@ -125,6 +125,8 @@ All of Beatrix Potter's precious picture books for children where THERE. Like a 
 I started by firing up Scott Tolinski's top-notch tutorial [Pro Gatsby 2](https://www.leveluptutorials.com/tutorials/pro-gatsby-2).
 Before I knew it, I had the Ginger & Pickles book deployed before i even remembered the poor pirates! Arrh!
 
+### A Good Summer
+
 Do not worry! Pirates were added, kids from the kindergarten contributed and I kept working on a Gatbsy starter to simplify creating books even more.
 
 When the Gasby Theme Jam came around, it was the perfect project for my time at the summer office!
