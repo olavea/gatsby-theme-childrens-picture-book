@@ -11,9 +11,11 @@
 
 > Read how my daughter Lillian (4.5 🦄) gave me this book building idea below.
 
-> Here is a [DEMO site](https://petra-rabbit.netlify.com) we made for you. It's almost Beatrix Potter's Peter Rabbit. Narrated by Lillian and I.
+> Check out [Petra Rabbit](https://petra-rabbit.netlify.com). It's almost Beatrix Potter's Peter Rabbit, narrated by Lillian and I.
 
 > -- <cite>Ola Vea (#codenewbie 41)<cite>
+
+[DEMO Site](https://petra-rabbit.netlify.com)
 
 ## Create a Do-It-Yourself picture book together with a child you know
 
@@ -85,7 +87,7 @@ module.exports = {
     // the other pages follow this configuration <page#> | <siteTitle>.
     siteTitle: `Petra Rabbit`,
     // Used for SEO
-    siteDescription: `Almost Peter Rabbit by Beatrix Potter. Narrated by Ola (41) and Lillian (4.5 🦄)`,
+    siteDescription: `Almost Beatrix Potter's Peter Rabbit, narrated by Ola (41) and Lillian (4.5 🦄)`,
     // Will be set on the <html /> tag
     siteLanguage: `en`,
     // Twitter Handle
@@ -106,7 +108,7 @@ Why do we do this? Its so the state of the audio element will persist through al
 
 ### A Good Day In The Morning
 
-One sunny morning Lillian and I were reading Ginger & Pickles, by Beatrix Potter, together.
+One sunny morning Lillian and I were reading Beatrix Potter's Ginger & Pickles together.
 Lillian (4.5 🦄) is my daughter. Ginger is an orange and yellow striped cat who runs a shop with Pickles the terrier. Lillian was drinking warmed oat milk, I was reading out loud and sipping coffee.
 
 Lillian said:
@@ -118,14 +120,13 @@ Lillian said:
 
 After a reckless ride on her green bicycle, I leave Lillian at kindergarten and start my workday by typing «Beatrix Potter» into google.
 
-All of Beatrix Potter’s precious picture books for children where THERE. Like a treasure trove. Content free from «this-content-needs-polishing-before-publishing-it» thoughts to distract me.
+All of Beatrix Potter's precious picture books for children where THERE. Like a treasure trove. Content free from «this-content-needs-polishing-before-publishing-it» thoughts to distract me.
 
-I started by firing up Scott Tolinski’s top-notch tutorial [Pro Gatsby 2](https://www.leveluptutorials.com/tutorials/pro-gatsby-2).
-
+I started by firing up Scott Tolinski's top-notch tutorial [Pro Gatsby 2](https://www.leveluptutorials.com/tutorials/pro-gatsby-2).
 Before I knew it, I had the Ginger & Pickles book deployed before i even remembered the poor pirates! Arrh!
 
-Do not worry! Pirates were added, and kids from the kindergarten contributed. And I kept working on a Gatbsy starter to simplify creating books even more.
+Do not worry! Pirates were added, kids from the kindergarten contributed and I kept working on a Gatbsy starter to simplify creating books even more.
 
 When the Gasby Theme Jam came around, it was the perfect project for my time at the summer office!
 
-And the rest they say, is history (or a [tweet thread by Lillian's mom @raae](https://twitter.com/raae/status/1147430949598240769)).
+And the rest as they say, is history (or a [tweet thread by Lillian's mom @raae](https://twitter.com/raae/status/1147430949598240769)).
