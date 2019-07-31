@@ -9,7 +9,7 @@
 
 > I love reading books. So the day it dawned on me that I could build a book with Gatsby was a GOOD day. By open sourcing this theme I hope to pass some of the goodness on to you.
 
-> Read how my daughter Lillian (4.5 🦄) gave me this book building idea below.
+> [Lean how my daughter](#storytime) Lillian (4.5 🦄) gave me this book building idea by scrolling to the end.
 
 > Check out [Petra Rabbit](https://petra-rabbit.netlify.com). It's almost Beatrix Potter's Peter Rabbit, narrated by Lillian and I.
 
@@ -104,7 +104,7 @@ This theme has a persistent layout component `components/persistenLayout.js`. Yo
 
 Why do we do this? Its so the state of the audio element will persist through all pages of the book.
 
-## Storytime
+## [Storytime](#storytime)
 
 ### A Good Day In The Morning
 
