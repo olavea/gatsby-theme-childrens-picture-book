@@ -1,15 +1,8 @@
 import React from "react"
-import { graphql, navigate } from "gatsby"
+import { graphql } from "gatsby"
 import ImagePage from "../components/imagePage"
-import useKeyNavigation from "../hooks/useKeyNavigation"
-import useSwipeNavigation from "../hooks/useSwipeNavigation"
 
 const ImagePageTemplate = ({ data: { file }, pageContext }) => {
-  const { nextPage, previousPage } = pageContext
-
-  useKeyNavigation({ nextPage, previousPage }, navigate)
-  useSwipeNavigation({ nextPage, previousPage }, navigate)
-
   return <ImagePage {...pageContext} imageFile={file} />
 }
 

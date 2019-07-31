@@ -2,7 +2,9 @@ import { useEffect } from "react"
 
 const useKeyNavigation = ({ nextPage, previousPage }, onNavigate) => {
   const handleKeyStroke = e => {
+    console.log(e)
     if (e.keyCode === 37 && previousPage) {
+      console.log(previousPage)
       onNavigate(previousPage.path)
     }
 
@@ -17,7 +19,7 @@ const useKeyNavigation = ({ nextPage, previousPage }, onNavigate) => {
     return () => {
       window.removeEventListener("keydown", handleKeyStroke)
     }
-  }, [])
+  })
 }
 
 export default useKeyNavigation
