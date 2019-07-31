@@ -16,8 +16,9 @@ If you want to read how my daughter Lillian (4) gave me this book building idea 
 [**Demo Website**](https://petra-kanini.netlify.com)
 
 ## Features
--
--
+
+## -
+
 -
 
 ## Installation
@@ -38,15 +39,13 @@ gatsby new book olavea/gatsby-starter-book
 
 ### Theme options
 
-| Key            | Default Value      | Description                                                                                               |
-| -------------- | ------------------ | --------------------------------------------------------------------------------------------------------- |
-| `basePath`     | `/`                | Root url for the theme                                                                                    |
-| `imagePath` | `book/images` | Location of picturess                                                                                      |
-| `audioPath`    | `book/audio`    | Location of audio (optional)                                                                   |
+| Key         | Default Value | Description                                              |
+| ----------- | ------------- | -------------------------------------------------------- |
+| `basePath`  | `/`           | Root url for the theme                                   |
+| `imagePath` | `book/images` | Path to folder of images to turn into picture book pages |
+| `audioPath` | null          | Path to folder with a single audio file (optional)       |
 
-The usage of `book/pics` is mandatory. Have a look at the [example](https://github.com/LekoArts/gatsby-themes/tree/master/examples/emma) on how to create entries.
-
-The usage of `book/audio` is optional.
+The `imagePath` folder must contain at least one image file. The picture book pages will be sorted alphabetically by filename. We suggest using a naming schema similar to this "01.jpg", "02.jpg" ... "99.jpg".
 
 #### Example usage
 
@@ -57,14 +56,13 @@ module.exports = {
     {
       resolve: `@olavea/gatsby-theme-book`,
       options: {
-        // (I need some help on everything below this @raae or @ testower says @olavea) basePath defaults to `/`
-        basePath: `/sideproject`,
-        // projectsPath defaults to `content/projects`
-        projectsPath: `content/cool-projects`
-      }
-    }
-  ]
-};
+        basePath: `/my-book`,
+        imagePath: `book/pics`,
+        audioPath: `book/audio`,
+      },
+    },
+  ],
+}
 ```
 
 #### Additional configuration
@@ -90,9 +88,9 @@ module.exports = {
     // Used for og:image and must be placed inside the `static` folder
     siteImage: `/banner.jpg`,
     // Twitter Handle
-    author: `@lekoarts_de`
-  }
-};
+    author: `@lekoarts_de`,
+  },
+}
 ```
 
 ### Formats
@@ -133,7 +131,9 @@ Lillian said:
 «Do it NOW!» golden haired Lillian (4) said.
 
 ## A Good Day At Work
-After a reckless ride on her green bicycle I leave Lillian at kindergarten and start my work day by typimg «Beatrix Potter» into  google, she is the author of Ginger & Pickles.
+
+After a reckless ride on her green bicycle I leave Lillian at kindergarten and start my work day by typimg «Beatrix Potter» into google, she is the author of Ginger & Pickles.
 
 ## A Treausre Trove
+
 All of Beatrix Potter’s precious picture books for children where THERE, treausre trovelike. Clean content undirtified by «this-content-needs-polishing» thoughts to disctract me. I got started by firing up Scott Tolinski’s top notch tutorial Pro Gatsby 2. I had our new Ginger & Pickles book deployed before i even rememberd the poor pirates! Arrh!
