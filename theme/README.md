@@ -24,15 +24,15 @@ If you want to read how my daughter Lillian (4) gave me this book building idea 
 ## Installation
 
 ```sh
-npm install @olavea/gatsby-theme-book
+npm install @olavea/gatsby-theme-picture-book
 ```
 
 ### Install as a starter
 
-This will generate a new book (with the folder name "book") that pre-configures use of the theme including example content.
+This will generate a new book (with the folder name "book") that pre-configures the use of the theme including example content.
 
 ```sh
-gatsby new book olavea/gatsby-starter-book
+gatsby new book @olavea/gatsby-starter-picture-book-theme
 ```
 
 ## Usage
@@ -45,7 +45,7 @@ gatsby new book olavea/gatsby-starter-book
 | `imagePath` | `book/images` | Path to folder of images to turn into picture book pages |
 | `audioPath` | null          | Path to folder with a single audio file (optional)       |
 
-The `imagePath` folder must contain at least one image file. The picture book pages will be sorted alphabetically by filename. We suggest using a naming schema similar to this "01.jpg", "02.jpg" ... "99.jpg".
+The `imagePath` folder must contain at least _one_ image file. The book's pages will be sorted alphabetically by filename. We suggest using a naming schema similar to this "01.jpg", "02.jpg" ... "99.jpg".
 
 #### Example usage
 
@@ -54,7 +54,7 @@ The `imagePath` folder must contain at least one image file. The picture book pa
 module.exports = {
   plugins: [
     {
-      resolve: `@olavea/gatsby-theme-book`,
+      resolve: `@olavea/gatsby-theme-picture-book`,
       options: {
         basePath: `/my-book`,
         imagePath: `book/pics`,
@@ -73,22 +73,16 @@ In addition to the theme options, there are a handful of items you can customize
 // gatsby-config.js
 module.exports = {
   siteMetadata: {
-    // Used for the title template on pages other than the index site
-    siteTitle: `Emma`,
-    // Default title of the page
-    siteTitleAlt: `Emma - @lekoarts/gatsby-theme-emma`,
-    // Can be used for e.g. JSONLD
-    siteHeadline: `Emma - Gatsby Theme from @lekoarts`,
+    // Used as part of the page title template and as title for the first page.
+    siteTitle: `Petra Kanini`,
     // Will be used to generate absolute URLs for og:image etc.
-    siteUrl: `https://emma.lekoarts.de`,
+    siteUrl: `https://petra-kanini.netlify.com`,
     // Used for SEO
-    siteDescription: `Minimalistic portfolio with full-width grid, page transitions, support for additional MDX pages, and a focus on large images`,
+    siteDescription: `Almost Peter Rabbit. Story and illustrations by Beatrix Potter, audio by Ola Vea (41) and Lillian Raae-Vea (4.5 🦄)`,
     // Will be set on the <html /> tag
     siteLanguage: `en`,
-    // Used for og:image and must be placed inside the `static` folder
-    siteImage: `/banner.jpg`,
     // Twitter Handle
-    author: `@lekoarts_de`,
+    author: `Beatrix Potter (with some small changes by Lillian Raae-Vea (4.5 🦄)`,
   },
 }
 ```

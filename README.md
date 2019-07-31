@@ -1,6 +1,6 @@
 # Gatsby Theme Picture Book
 
-This repo is a monorepo for the `gatsby-theme-picture-book`
+This repo is a monorepo for the `@olavea/gatsby-theme-picture-book`
 
 It includes:
 
