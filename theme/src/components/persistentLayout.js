@@ -2,7 +2,6 @@ import React from "react"
 import { navigate } from "gatsby"
 import PropTypes from "prop-types"
 
-import useKeyNavigation from "../hooks/useKeyNavigation"
 import useSwipeNavigation from "../hooks/useSwipeNavigation"
 
 import PageFlipper from "./pageFlipper"
@@ -21,7 +20,6 @@ import Layout from "./ui/layout"
 const PersistentLayout = ({ children, pageContext }) => {
   const { nextPage, previousPage } = pageContext
 
-  useKeyNavigation({ nextPage, previousPage }, navigate)
   useSwipeNavigation({ nextPage, previousPage }, navigate)
 
   return (
