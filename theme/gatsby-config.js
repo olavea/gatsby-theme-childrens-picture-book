@@ -28,7 +28,7 @@ module.exports = ({
       {
         resolve: `gatsby-plugin-layout`,
         options: {
-          component: require.resolve(`./src/components/audioWrapper.js`),
+          component: require.resolve(`./src/components/persistentWrapper.js`),
         },
       },
       "gatsby-plugin-theme-ui",
