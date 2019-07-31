@@ -6,6 +6,7 @@ import useSwipeNavigation from "./useSwipeNavigation"
 const PageFlipper = ({ nextPage, previousPage }) => {
   useArrowNavigation({ nextPage, previousPage }, navigate)
   useSwipeNavigation({ nextPage, previousPage }, navigate)
+
   return (
     <ul
       style={{
@@ -22,7 +23,7 @@ const PageFlipper = ({ nextPage, previousPage }) => {
       <li>
         {previousPage && (
           <Link to={`${previousPage.path}`} rel="prev">
-            ← {previousPage.path}
+            ← {previousPage.title}
           </Link>
         )}
       </li>
