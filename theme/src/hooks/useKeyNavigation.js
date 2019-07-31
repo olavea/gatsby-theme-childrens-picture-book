@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 
-export default ({ nextPage, previousPage }, onNavigate) => {
+const useKeyNavigation = ({ nextPage, previousPage }, onNavigate) => {
   const handleKeyStroke = e => {
     if (e.keyCode === 37 && previousPage) {
       onNavigate(previousPage.path)
@@ -19,3 +19,5 @@ export default ({ nextPage, previousPage }, onNavigate) => {
     }
   }, [])
 }
+
+export default useKeyNavigation

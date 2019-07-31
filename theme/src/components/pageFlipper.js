@@ -1,12 +1,7 @@
 import React from "react"
-import { Link, navigate } from "gatsby"
-import useArrowNavigation from "./useArrowNavigation"
-import useSwipeNavigation from "./useSwipeNavigation"
+import { Link } from "gatsby"
 
 const PageFlipper = ({ nextPage, previousPage }) => {
-  useArrowNavigation({ nextPage, previousPage }, navigate)
-  useSwipeNavigation({ nextPage, previousPage }, navigate)
-
   return (
     <ul
       style={{
