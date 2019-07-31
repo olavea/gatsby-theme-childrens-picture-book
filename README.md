@@ -7,8 +7,6 @@
   @olavea/gatsby-theme-picture-book
 </h1>
 
-**Create a Do-It-Yourself picture book together with a child you know.**
-
 > I love reading books. So the day it dawned on me that I could build a book with Gatsby was a GOOD day. By open sourcing this theme I hope to pass some of the goodness on to you.
 
 > Read how my daughter Lillian (4.5 🦄) gave me this book building idea below.
@@ -17,7 +15,7 @@
 
 > -- <cite>Ola Vea (#codenewbie 41)<cite>
 
-## Features
+## Create a Do-It-Yourself picture book together with a child you know
 
 - Automagically generate a picture book from image files
 - Touch swipe to flip page
@@ -33,11 +31,9 @@ npm install @olavea/gatsby-theme-picture-book
 
 ### Install as a starter
 
-This will generate a new book (with the folder name "book") that pre-configures the use of the theme including example content.
+A starter has not yet been created. Hoping for a solution to [this issue](https://github.com/gatsbyjs/gatsby/issues/16135).
 
-```sh
-gatsby new book @olavea/gatsby-starter-picture-book-theme
-```
+But do have a look in `/demo` for a full example.
 
 ## Usage
 
