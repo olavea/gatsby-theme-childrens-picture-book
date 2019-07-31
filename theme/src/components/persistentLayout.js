@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 import useKeyNavigation from "../hooks/useKeyNavigation"
 import useSwipeNavigation from "../hooks/useSwipeNavigation"
 
-import PageFlipper from "./pageFlipper"
+import Navigation from "./navigation"
 import AudioPlayer from "./audioPlayer"
 
 import Layout from "./ui/layout"
@@ -26,7 +26,7 @@ const PersistentLayout = ({ children, pageContext }) => {
 
   return (
     <Layout>
-      <PageFlipper {...pageContext} />
+      <Navigation {...pageContext} />
       <AudioPlayer />
       {children}
     </Layout>

@@ -8,8 +8,10 @@ const page = (node, index, basePath) => {
   }
 }
 
-exports.createPages = ({ graphql, actions }, { basePath = "/" }) => {
+exports.createPages = ({ graphql, actions }, options) => {
   const { createPage } = actions
+  const { basePath = "/", infoLink } = options
+
   return new Promise((resolve, reject) => {
     graphql(`
       query allImageFilesQuery {
@@ -44,6 +46,7 @@ exports.createPages = ({ graphql, actions }, { basePath = "/" }) => {
             previousPage,
             title: currentPage.title,
             imageFileName: node.name,
+            infoLink,
           },
         })
       })
