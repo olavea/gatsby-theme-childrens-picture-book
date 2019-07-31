@@ -1,10 +1,14 @@
 import React from "react"
 import { navigate } from "gatsby"
 import PropTypes from "prop-types"
+
 import useKeyNavigation from "../hooks/useKeyNavigation"
 import useSwipeNavigation from "../hooks/useSwipeNavigation"
+
 import PageFlipper from "./pageFlipper"
 import AudioPlayer from "./audioPlayer"
+
+import Layout from "./ui/layout"
 
 /*
  * This component is used by the gatsby-plugin-layout.
@@ -21,22 +25,11 @@ const PersistentLayout = ({ children, pageContext }) => {
   useSwipeNavigation({ nextPage, previousPage }, navigate)
 
   return (
-    <main
-      style={{
-        position: "absolute",
-        display: "flex",
-        justifyContent: "center",
-        justifyItems: "center",
-        height: "90vh",
-        width: "90vw",
-        top: "5vw",
-        left: "5vw",
-      }}
-    >
+    <Layout>
       <PageFlipper {...pageContext} />
       <AudioPlayer />
       {children}
-    </main>
+    </Layout>
   )
 }
 
