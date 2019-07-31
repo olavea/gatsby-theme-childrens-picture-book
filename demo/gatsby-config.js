@@ -10,7 +10,7 @@ module.exports = {
       resolve: `gatsby-theme-childrens-picture-book`,
       options: {
         imagePath: `./book/pics/`,
-        // audioPath: `./book/audio/`,
+        audioPath: `./book/audio/`,
       },
     },
   ],
