@@ -2,7 +2,7 @@ import React from "react"
 
 import Button from "./ui/button"
 
-const PageFlipper = ({ previousPage, nextPage, infoLink }) => {
+const Navigation = ({ previousPage, nextPage, infoLink }) => {
   const infoNavItem = infoLink &&
     infoLink.url && {
       label: infoLink.label || "i",
@@ -29,11 +29,11 @@ const PageFlipper = ({ previousPage, nextPage, infoLink }) => {
     : infoNavItem
 
   return (
-    <>
+    <nav>
       {prevNavItem && <Button {...prevNavItem} position={"left"} />}
       {nextNavItem && <Button {...nextNavItem} position={"right"} />}
-    </>
+    </nav>
   )
 }
 
-export default PageFlipper
+export default Navigation
