@@ -1,17 +1,21 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Img from "gatsby-image"
-import PageFlipper from "./pageFlipper"
 import SEO from "./seo"
 
-const Page = ({ title, imageFile, nextPage, previousPage }) => {
+const Page = ({ title, imageFile }) => {
   return (
     <>
       <SEO title={title} />
 
-      <PageFlipper nextPage={nextPage} previousPage={previousPage} />
-
-      <Img fluid={imageFile.childImageSharp.fluid} />
+      <Img
+        style={{
+          maxHeight: "100%",
+          position: "static",
+        }}
+        imgStyle={{ objectFit: "contain" }}
+        fluid={imageFile.childImageSharp.fluid}
+      />
     </>
   )
 }

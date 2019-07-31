@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react"
 
-export default ({previousPage, nextPage}, navigate) => {
+const useSwipeNavigation = ({ previousPage, nextPage }, navigate) => {
   const [touchStart, setTouchStart] = useState(null)
   const [isSwiping, setIsSwiping] = useState(false)
   const [swipePosition, setSwipePosition] = useState(null)
 
-  const onTouchMove = (event) => {
+  const onTouchMove = event => {
     if (!touchStart) return
     const { pageX: x, pageY: y } = event.touches[0]
     const deltaX = x - touchStart.x
@@ -14,17 +14,17 @@ export default ({previousPage, nextPage}, navigate) => {
     setSwipePosition({ deltaX, deltaY })
   }
 
-  const onTouchStart = (event) => {
+  const onTouchStart = event => {
     const { pageX: x, pageY: y } = event.touches[0]
-    setTouchStart({ x, y });
+    setTouchStart({ x, y })
   }
 
   const onTouchEnd = () => {
     if (isSwiping && swipePosition) {
       if (swipePosition.deltaX < 0 && nextPage) {
-        navigate(nextPage)
+        navigate(nextPage.path)
       } else if (swipePosition.deltaX > 0 && previousPage) {
-        navigate(previousPage)
+        navigate(previousPage.path)
       }
     }
 
@@ -34,14 +34,16 @@ export default ({previousPage, nextPage}, navigate) => {
   }
 
   useEffect(() => {
-    window.addEventListener('touchmove', onTouchMove)
-    window.addEventListener('touchstart', onTouchStart)
-    window.addEventListener('touchend', onTouchEnd)
+    window.addEventListener("touchmove", onTouchMove)
+    window.addEventListener("touchstart", onTouchStart)
+    window.addEventListener("touchend", onTouchEnd)
 
     return () => {
-      window.removeEventListener('touchmove', onTouchMove)
-      window.removeEventListener('touchstart', onTouchStart)
-      window.removeEventListener('touchend', onTouchEnd)
+      window.removeEventListener("touchmove", onTouchMove)
+      window.removeEventListener("touchstart", onTouchStart)
+      window.removeEventListener("touchend", onTouchEnd)
     }
   })
 }
+
+export default useSwipeNavigation
