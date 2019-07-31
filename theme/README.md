@@ -13,7 +13,7 @@ I love reading books. So the day it dawned on me that I could build a book with 
 
 If you want to read how my daughter Lillian (4) gave me this book building idea see below.
 
-[**Demo Website**](https://petra-kanini.netlify.com)
+[**Demo Website**](https://petra-rabbit.netlify.com)
 
 ## Features
 
@@ -74,11 +74,11 @@ In addition to the theme options, there are a handful of items you can customize
 module.exports = {
   siteMetadata: {
     // Used as part of the page title template and as title for the first page.
-    siteTitle: `Petra Kanini`,
+    siteTitle: `Petra Rabbit`,
     // Will be used to generate absolute URLs for og:image etc.
-    siteUrl: `https://petra-kanini.netlify.com`,
+    siteUrl: `https://petra-rabbit.netlify.com`,
     // Used for SEO
-    siteDescription: `Almost Peter Rabbit. Story and illustrations by Beatrix Potter, audio by Ola Vea (41) and Lillian Raae-Vea (4.5 🦄)`,
+    siteDescription: `Almost Peter Rabbit by Beatrix Potter. Narrated by Ola Vea (41) and Lillian Raae-Vea (4.5 🦄)`,
     // Will be set on the <html /> tag
     siteLanguage: `en`,
     // Twitter Handle
