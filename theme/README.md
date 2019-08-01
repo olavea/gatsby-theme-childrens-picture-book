@@ -7,15 +7,13 @@
   @olavea/gatsby-theme-picture-book
 </h1>
 
-> I love reading books. So the day it dawned on me that I could build a book with Gatsby was a GOOD day. By open sourcing this theme I hope to pass some of the goodness on to you.
+I love reading books. So the day it dawned on me that I could build a book with Gatsby was a GOOD day. By open sourcing this theme I hope to pass some of the goodness on to you.
 
-> [Lean how my daughter](#storytime) Lillian (4.5 🦄) gave me this book building idea by scrolling to the end.
+[Lean how my daughter](#storytime) Lillian (4.5 🦄) gave me this book building idea by scrolling to the end.
 
-> Check out [Petra Rabbit](https://petra-rabbit.netlify.com). It's almost Beatrix Potter's Peter Rabbit, narrated by Lillian and I.
+Check out [Petra Rabbit](https://petra-rabbit.netlify.com). It's almost Beatrix Potter's Peter Rabbit, narrated by Lillian and I.
 
-> -- <cite>Ola Vea (#codenewbie 41)<cite>
-
-[DEMO Site](https://petra-rabbit.netlify.com)
+-- <cite>Ola Vea (#codenewbie 41)<cite>
 
 ## Create a Do-It-Yourself picture book together with a child you know
 
@@ -24,6 +22,8 @@
 - Optional audio track
 
 Ola will continue working on this theme while learning to code. New feature will be added sporadically. If you are #codenewbie as well you are welcome to join, @raae will help out manage the repo.
+
+[DEMO Site](https://petra-rabbit.netlify.com)
 
 ## Installation
 
@@ -132,13 +132,4 @@ Do not worry! Pirates were added, kids from the kindergarten contributed and I k
 When the Gasby Theme Jam came around, it was the perfect project for my time at the summer office!
 
 And the rest as they say, is history (or a [tweet thread by Lillian's mom @raae](https://twitter.com/raae/status/1147430949598240769)).
-
-### A Beatrix Potter 🦄 Treasure Trove
-
-[Picture Books by Beatrix Potter on gutenberg.org](https://www.gutenberg.org/wiki/Children%27s_Picture_Books_(Bookshelf)#Beatrix_Potter.2C_1866-1943)
-
-
-
-This eBook is for the use of anyone anywhere at no cost and with almost no restrictions whatsoever. You may copy it, give it away or
-re-use it under [the terms of the Project Gutenberg License included with the Gutenberg version of this eBook](https://www.gutenberg.org/files/14838/14838-h/14838-h.htm)
 

@@ -7,15 +7,13 @@
   @olavea/gatsby-theme-picture-book
 </h1>
 
-> I love reading books. So the day it dawned on me that I could build a book with Gatsby was a GOOD day. By open sourcing this theme I hope to pass some of the goodness on to you.
+I love reading books. So the day it dawned on me that I could build a book with Gatsby was a GOOD day. By open sourcing this theme I hope to pass some of the goodness on to you.
 
-> [Lean how my daughter](#storytime) Lillian (4.5 🦄) gave me this book building idea by scrolling to the end.
+[Lean how my daughter](#storytime) Lillian (4.5 🦄) gave me this book building idea by scrolling to the end.
 
-> Check out [Petra Rabbit](https://petra-rabbit.netlify.com). It's almost Beatrix Potter's Peter Rabbit, narrated by Lillian and I.
+Check out [Petra Rabbit](https://petra-rabbit.netlify.com). It's almost Beatrix Potter's Peter Rabbit, narrated by Lillian and I.
 
-> -- <cite>Ola Vea (#codenewbie 41)<cite>
-
-[DEMO Site](https://petra-rabbit.netlify.com)
+-- <cite>Ola Vea (#codenewbie 41)<cite>
 
 ## Create a Do-It-Yourself picture book together with a child you know
 
@@ -24,6 +22,8 @@
 - Optional audio track
 
 Ola will continue working on this theme while learning to code. New feature will be added sporadically. If you are #codenewbie as well you are welcome to join, @raae will help out manage the repo.
+
+[DEMO Site](https://petra-rabbit.netlify.com)
 
 ## Installation
 
@@ -67,12 +67,12 @@ module.exports = {
         audioPath: `book/audio`,
         infoLink: {
           title: "Project on GitHub",
-          url: `https://github.com/olavea/gatsby-theme-picture-book.git`
-        }
-      }
-    }
-  ]
-};
+          url: `https://github.com/olavea/gatsby-theme-picture-book.git`,
+        },
+      },
+    },
+  ],
+}
 ```
 
 #### Additional configuration
@@ -91,9 +91,9 @@ module.exports = {
     // Will be set on the <html /> tag
     siteLanguage: `en`,
     // Twitter Handle
-    author: `@OlaHolstVea`
-  }
-};
+    author: `@OlaHolstVea`,
+  },
+}
 ```
 
 ### Shadowing
@@ -123,7 +123,7 @@ After a reckless ride on her green bicycle, I leave Lillian at kindergarten and 
 All of Beatrix Potter's precious picture books for children where THERE. Like a treasure trove. Content free from «this-content-needs-polishing-before-publishing-it» thoughts to distract me.
 
 I started by firing up Scott Tolinski's top-notch tutorial [Pro Gatsby 2](https://www.leveluptutorials.com/tutorials/pro-gatsby-2).
-Before I knew it, I had the Ginger & Pickles book deployed before i even remembered the poor pirates! Arrh!
+Before I knew it, I had the Ginger & Pickles book deployed before I even remembered the poor pirates! Arrh!
 
 ### A Good Summer
 
