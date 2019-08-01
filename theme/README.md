@@ -123,7 +123,7 @@ After a reckless ride on her green bicycle, I leave Lillian at kindergarten and 
 All of Beatrix Potter's precious picture books for children where THERE. Like a treasure trove. Content free from «this-content-needs-polishing-before-publishing-it» thoughts to distract me.
 
 I started by firing up Scott Tolinski's top-notch tutorial [Pro Gatsby 2](https://www.leveluptutorials.com/tutorials/pro-gatsby-2).
-Before I knew it, I had the Ginger & Pickles book deployed before i even remembered the poor pirates! Arrh!
+Before I knew it, I had the Ginger & Pickles book deployed before I even remembered the poor pirates! Arrh!
 
 ### A Good Summer
 
@@ -132,3 +132,13 @@ Do not worry! Pirates were added, kids from the kindergarten contributed and I k
 When the Gasby Theme Jam came around, it was the perfect project for my time at the summer office!
 
 And the rest as they say, is history (or a [tweet thread by Lillian's mom @raae](https://twitter.com/raae/status/1147430949598240769)).
+
+### A Beatrix Potter Treasure Trove
+
+[Picture Books by Beatrix Potter on gutenberg.org](https://www.gutenberg.org/wiki/Children%27s_Picture_Books_(Bookshelf)#Beatrix_Potter.2C_1866-1943)
+
+
+
+This eBook is for the use of anyone anywhere at no cost and with almost no restrictions whatsoever. You may copy it, give it away or
+re-use it under [the terms of the Project Gutenberg License included with the Gutenberg version of this eBook](https://www.gutenberg.org/files/14838/14838-h/14838-h.htm)
+
