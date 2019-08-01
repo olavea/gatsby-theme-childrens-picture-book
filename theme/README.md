@@ -133,7 +133,7 @@ When the Gasby Theme Jam came around, it was the perfect project for my time at 
 
 And the rest as they say, is history (or a [tweet thread by Lillian's mom @raae](https://twitter.com/raae/status/1147430949598240769)).
 
-### A Beatrix Potter Treasure Trove
+### A Beatrix Potter 🦄 Treasure Trove
 
 [Picture Books by Beatrix Potter on gutenberg.org](https://www.gutenberg.org/wiki/Children%27s_Picture_Books_(Bookshelf)#Beatrix_Potter.2C_1866-1943)
 
