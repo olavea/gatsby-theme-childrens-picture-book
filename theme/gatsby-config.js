@@ -4,7 +4,7 @@ module.exports = ({ imagePath = "book/pictures", audioPath }) => {
       siteTitle: "@olavea/gatsby-theme-picture-book",
       siteDescription:
         "Make a Do-It-Yourself picture book together with a child you know.",
-      siteLang: "en",
+      siteLanguage: "en",
       author: "@olavea",
     },
     plugins: [
