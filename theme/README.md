@@ -21,10 +21,10 @@ Check out [Petra Rabbit](https://petra-rabbit.netlify.com). It's almost Beatrix 
 - Touch swipe to flip page
 - Optional audio track
 
-Ola will continue working on this theme while learning to code. New feature will be added sporadically. If you are #codenewbie as well you are welcome to make a pull request on [github](https://github.com/olavea/gatsby-theme-picture-book), @raae will help out manage the repo.
+Ola will continue working on this theme while learning to code. New feature will be added sporadically. If you are #codenewbie as well you are welcome to make a pull request on [github](https://github.com/olavea/gatsby-theme-picture-book), @raae will help out manage the repo. Ask Ola anything or give him ideas on twitter [@OlaHolstVea](https://twitter.com/OlaHolstVea)
 
 [DEMO Site](https://petra-rabbit.netlify.com)
-Ask Ola anything or give him ideas on twitter [@OlaHolstVea](https://twitter.com/OlaHolstVea)
+
 
 
 
