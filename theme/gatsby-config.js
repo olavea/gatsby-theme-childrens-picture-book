@@ -34,6 +34,7 @@ module.exports = ({ imagePath = "book/pictures", audioPath }) => {
             component: require.resolve(`./src/components/persistentLayout.js`),
           },
         },
+
         "gatsby-plugin-sharp",
         "gatsby-transformer-sharp",
       ]),
