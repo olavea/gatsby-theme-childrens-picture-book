@@ -34,6 +34,7 @@ module.exports = ({ imagePath = "book/pictures", audioPath }) => {
             component: require.resolve(`./src/components/persistentLayout.js`),
           },
         },
+        "react-helmet",
         "gatsby-plugin-sharp",
         "gatsby-transformer-sharp",
       ]),
