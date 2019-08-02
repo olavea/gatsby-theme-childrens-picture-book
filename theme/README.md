@@ -11,7 +11,7 @@ I love reading books. So the day it dawned on me that I could build a book with 
 
 [Lean how my daughter](#storytime) Lillian (4.5 🦄) gave me this book building idea by scrolling to the end.
 
-Check out [Petra Rabbit](https://petra-rabbit.netlify.com). It's almost Beatrix Potter's Peter Rabbit, narrated by Lillian and I.
+Check out [Petra Rabbit](https://petra-rabbit.netlify.com). It's almost Beatrix Potter's Peter Rabbit, narrated by Lillian (4.5 🦄) and I.
 
 -- <cite>Ola Vea (#codenewbie 41)<cite>
 
@@ -21,9 +21,12 @@ Check out [Petra Rabbit](https://petra-rabbit.netlify.com). It's almost Beatrix 
 - Touch swipe to flip page
 - Optional audio track
 
-Ola will continue working on this theme while learning to code. New feature will be added sporadically. If you are #codenewbie as well you are welcome to join, @raae will help out manage the repo.
+Ola will continue working on this theme while learning to code. New feature will be added sporadically. If you are #codenewbie as well you are welcome to make a pull request on [github](https://github.com/olavea/gatsby-theme-picture-book), @raae will help out manage the repo.
 
 [DEMO Site](https://petra-rabbit.netlify.com)
+Ask Ola anything or give him ideas on twitter [@OlaHolstVea](https://twitter.com/OlaHolstVea)
+
+
 
 ## Installation
 
