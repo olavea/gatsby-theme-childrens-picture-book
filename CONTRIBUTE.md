@@ -29,3 +29,25 @@ TODO: Document coding style and more of the workflow to welcome #codenewbies.
   - IMPORTANT: Do not create the pull request toward Jason's repo, but this repo!
 - Make sure the Pull Request is running as it should on Netlify before merging to master.
   - If there are many small "ugly" commit do a "Squash and merge" and clean up the commit message.
+
+## How to publish to npm
+
+- Make sure you are in the theme folder
+  - `cd theme`
+- Checkout the master branch
+  - `git checkout master`
+- Make sure _all_ your changes are commited to the master branch
+  - Either by a Pull Request being merged,
+  - or by commiting sraight to master (only ok for small doc changes)
+- Pull or changes into your local master branch
+  - `git pull`
+- Update the npm version by using `npm version`,
+  - `npm version patch` for bug fixed or doc changes
+  - `npm version minor` for new backward compatible changes
+  - `npm version major` for non backward compatible changes
+- Commit the version change to master
+  - `git add .`
+  - `git commit -m "v<X.Y.Z"`
+  - `git push`
+- Publish the new version to npm
+  - `npm publish`
