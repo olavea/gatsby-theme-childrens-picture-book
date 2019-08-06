@@ -82,7 +82,7 @@ module.exports = {
 ```
 
 1.  **Almost There...**
-`.
+
 
 - Create a new folder "book" at the root of your source code.
 - Create a new folder "images" inside your new folder "book".
