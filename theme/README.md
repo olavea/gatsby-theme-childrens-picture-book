@@ -60,7 +60,7 @@ npm install @olavea/gatsby-theme-picture-book
 
 1.  **Open the source code and start editing gatsby-config.js**
 
-    Open the `Your_Brutus_BADger_Book` directory in your code editor of choice and edit `gatsby-config.js
+    Open the `Your_Brutus_BADger_Book` directory in your code editor of choice and edit `gatsby-config.js`
 
 ```js
 // gatsby-config.js
@@ -84,19 +84,19 @@ module.exports = {
 1.  **Almost There...**
 `.
 
-    Create a new folder "book" at the root of your source code.
-    Create a new folder "images" inside your new folder "book".
-    Add two images to the "images" folder.
-    Rename your two images to "00" and "01"
-    Delete the folder "pages" at the root of your source code.
-    Also delete the file "index.js" inside the folder "pages".
+- Create a new folder "book" at the root of your source code.
+- Create a new folder "images" inside your new folder "book".
+- Add two images to the "images" folder.
+- Rename your two images to "00" and "01"
+- Delete the folder "pages" at the root of your source code.
+- Also delete the file "index.js" inside the folder "pages".
 
     ```sh
     # Start up your new Gatsby book
     gatsby develop
     ```
 
-    Your site is now running at `http://localhost:8000`!
+    Your book is now running at `http://localhost:8000`!
 
 
 
