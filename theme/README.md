@@ -35,7 +35,10 @@ Ola will continue working on this theme while learning to code. New features wil
 npm install @olavea/gatsby-theme-picture-book
 ```
 
-### Install With the Gatsby-starter-hello-world 🐰
+### Install Our Theme in Your Site or Blog
+
+
+### Or Install With the Gatsby-starter-hello-world
 
 1.  **Practice Creating a Children's Picture Book With the Gatsby-starter-hello-world and Our Theme.**
 
@@ -58,9 +61,32 @@ npm install @olavea/gatsby-theme-picture-book
     ```
 
 
-1.  **Open the source code and start editing gatsby-config.js**
 
-    Open the `Your_Brutus_BADger_Book` directory in your code editor of choice and edit `gatsby-config.js`
+
+1.  **Open the source code, delete the "pages" folder and add two new folders**
+
+Open the `Your_Brutus_BADger_Book` directory in your code editor of choice and:
+
+- Delete the folder "pages" at the root of your source code.
+- Also delete the file "index.js" inside the folder "pages".
+
+1.  **Add two new folders and two images**
+
+- Create a new folder "book" at the root of your source code.
+- Create a new folder "images" inside your new folder "book".
+- Add two images to the "images" folder.
+- Rename your two images to "00" and "01"
+
+    ```sh
+    # Start up your new Gatsby book
+    gatsby develop
+    ```
+
+    Your book is now running at `http://localhost:8000`!
+
+1.  **Edit your gatsby-config.js**
+
+
 
 ```js
 // gatsby-config.js
@@ -81,16 +107,10 @@ module.exports = {
 }
 ```
 
-1.  **Almost There...**
 
 
-- Create a new folder "book" at the root of your source code.
-- Create a new folder "images" inside your new folder "book".
-- Add two images to the "images" folder.
-- Rename your two images to "00" and "01"
-- Delete the folder "pages" at the root of your source code.
-- Also delete the file "index.js" inside the folder "pages".
 
+1.  **Start up your new Gatsby book**
     ```sh
     # Start up your new Gatsby book
     gatsby develop
@@ -99,25 +119,7 @@ module.exports = {
     Your book is now running at `http://localhost:8000`!
 
 
-
-
-
-
 ## Usage
-
-### Theme options
-
-| Key              | Default Value | Description                                              |
-| ---------------- | ------------- | -------------------------------------------------------- |
-| `basePath`       | `/`           | Root url for the theme                                   |
-| `imagePath`      | `book/images` | Path to folder of images to turn into picture book pages |
-| `audioPath`      | null          | Path to folder with a single audio file (optional)       |
-| `infoLink`       | null          | Adds an info button to first and last page (optional)    |
-| `infoLink.url`   | null          | Url to navigate to (external or internal)                |
-| `infoLink.label` | `i`           | Label inside button                                      |
-| `infoLink.title` | `info`        | Title for the a tag                                      |
-
-The `imagePath` folder must contain at least _one_ image file. The book's pages will be sorted alphabetically by filename. We suggest using a naming schema similar to this "01.jpg", "02.jpg" ... "99.jpg".
 
 #### Example Usage With Audiobook
 
@@ -140,6 +142,20 @@ module.exports = {
   ],
 }
 ```
+
+### Theme options
+
+| Key              | Default Value | Description                                              |
+| ---------------- | ------------- | -------------------------------------------------------- |
+| `basePath`       | `/`           | Root url for the theme                                   |
+| `imagePath`      | `book/images` | Path to folder of images to turn into picture book pages |
+| `audioPath`      | null          | Path to folder with a single audio file (optional)       |
+| `infoLink`       | null          | Adds an info button to first and last page (optional)    |
+| `infoLink.url`   | null          | Url to navigate to (external or internal)                |
+| `infoLink.label` | `i`           | Label inside button                                      |
+| `infoLink.title` | `info`        | Title for the a tag                                      |
+
+The `imagePath` folder must contain at least _one_ image file. The book's pages will be sorted alphabetically by filename. We suggest using a naming schema similar to this "01.jpg", "02.jpg" ... "99.jpg".
 
 #### Additional configuration
 
