@@ -18,3 +18,5 @@ Hoping for a solution to [this issue](https://github.com/gatsbyjs/gatsby/issues/
 
 This eBook is for the use of anyone anywhere at no cost and with almost no restrictions whatsoever. You may copy it, give it away or
 re-use it under [the terms of the Project Gutenberg License included with the Gutenberg version of this eBook](https://www.gutenberg.org/files/14838/14838-h/14838-h.htm)
+
+<!-- AUTO-GENERATED-CONTENT:END -->
