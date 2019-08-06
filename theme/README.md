@@ -61,42 +61,42 @@ npm install @olavea/gatsby-theme-picture-book
 
 1.  **Open the source code, delete the "pages" folder and add two new folders**
 
-Open the `Your_Brutus_BADger_Book` directory in your code editor of choice and:
+    Open the `Your_Brutus_BADger_Book` directory in your code editor of choice and:
 
-- Delete the folder "pages" at the root of your source code.
-- Also delete the file "index.js" inside the folder "pages".
+    - Delete the folder "pages" at the root of your source code.
+    - Also delete the file "index.js" inside the folder "pages".
 
 1.  **Add two new folders and two images**
 
-- Create a new folder "book" at the root of your source code.
-- Create a new folder "images" inside your new folder "book".
-- Add two images to the "images" folder. You can use
-[Brutus BADger's Baby Rabbit Breakfast by Beatrix Potter](https://geir-g-1.netlify.com/02) and [Mr Tod with Baby Rabbits in his pocket by Beatrix Potter](https://geir-g-1.netlify.com/03). Both images are for the use of anyone anywhere at no cost and with almost no restrictions whatsoever. You may copy them, give them away or re-use them under [the terms of the Project Gutenberg License included with the Gutenberg version of this eBook](https://www.gutenberg.org/files/14838/14838-h/14838-h.htm) Click the link and scroll all the way down.
-- Rename your two images to "00" and "01"
+    - Create a new folder "book" at the root of your source code.
+    - Create a new folder "images" inside your new folder "book".
+    - Add two images to the "images" folder. You can use
+    [Brutus BADger's Baby Rabbit Breakfast by Beatrix Potter](https://geir-g-1.netlify.com/02) and [Mr Tod with Baby Rabbits in his pocket by Beatrix Potter](https://geir-g-1.netlify.com/03). Both images are for the use of anyone anywhere at no cost and with almost no restrictions whatsoever. You may copy them, give them away or re-use them under [the terms of the Project Gutenberg License included with the Gutenberg version of this eBook](https://www.gutenberg.org/files/14838/14838-h/14838-h.htm) Click the link and scroll all the way down.
+    - Rename your two images to "00" and "01"
 
 
 1.  **Edit your gatsby-config.js**
 
 
 
-```js
-// gatsby-config.js
-module.exports = {
-  plugins: [
-    {
-      resolve: `@olavea/gatsby-theme-picture-book`,
-      options: {
-        basePath: `/my-book`,
-        imagePath: `book/images`,
-        infoLink: {
-          title: "gatsby-theme-picture-book on GitHub",
-          url: `https://github.com/olavea/gatsby-theme-picture-book.git`,
+    ```js
+    // gatsby-config.js
+    module.exports = {
+      plugins: [
+        {
+          resolve: `@olavea/gatsby-theme-picture-book`,
+          options: {
+            basePath: `/my-book`,
+            imagePath: `book/images`,
+            infoLink: {
+              title: "gatsby-theme-picture-book on GitHub",
+              url: `https://github.com/olavea/gatsby-theme-picture-book.git`,
+            },
+          },
         },
-      },
-    },
-  ],
-}
-```
+      ],
+    }
+    ```
 
 
 
