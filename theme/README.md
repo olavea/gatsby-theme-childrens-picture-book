@@ -35,17 +35,13 @@ Ola will continue working on this theme while learning to code. New features wil
 npm install @olavea/gatsby-theme-picture-book
 ```
 
-### Install Our Theme in Your Site or Blog
+### Install Our Theme With the Gatsby-starter-hello-world
 
+1.  **A book made with two random pictures, the Gatsby-starter-hello-world and our theme.**
 
-### Or Install With the Gatsby-starter-hello-world
-
-1.  **Practice Creating a Children's Picture Book With the Gatsby-starter-hello-world and Our Theme.**
-
-    Use the Gatsby CLI to create a new book, specifying the hello-world starter.
+    Use the Gatsby CLI to build a book, specifying the hello-world starter.
 
     ```sh
-    # create a new Gatsby book using the hello-world starter
     gatsby new Your_Brutus_BADger_Book https://github.com/gatsbyjs/gatsby-starter-hello-world
     ```
 
@@ -74,15 +70,10 @@ Open the `Your_Brutus_BADger_Book` directory in your code editor of choice and:
 
 - Create a new folder "book" at the root of your source code.
 - Create a new folder "images" inside your new folder "book".
-- Add two images to the "images" folder.
+- Add two images to the "images" folder. You can use
+[Brutus BADger's Baby Rabbit Breakfast by Beatrix Potter](https://geir-g-1.netlify.com/02) and [Mr Tod with Baby Rabbits in his pocket by Beatrix Potter](https://geir-g-1.netlify.com/03). Both images are for the use of anyone anywhere at no cost and with almost no restrictions whatsoever. You may copy them, give them away or re-use them under [the terms of the Project Gutenberg License included with the Gutenberg version of this eBook](https://www.gutenberg.org/files/14838/14838-h/14838-h.htm) Click the link and scroll all the way down.
 - Rename your two images to "00" and "01"
 
-    ```sh
-    # Start up your new Gatsby book
-    gatsby develop
-    ```
-
-    Your book is now running at `http://localhost:8000`!
 
 1.  **Edit your gatsby-config.js**
 

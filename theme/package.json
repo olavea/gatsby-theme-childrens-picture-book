@@ -5,7 +5,7 @@
     "type": "git",
     "url": "https://github.com/olavea/gatsby-theme-picture-book.git"
   },
-  "version": "0.2.8",
+  "version": "0.2.9",
   "main": "index.js",
   "license": "MIT",
   "peerDependencies": {
